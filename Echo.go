@@ -30,7 +30,7 @@ func echo(ctx *web.Context, val string){
 }
 func healthz(ctx *web.Context, val string){
    ctx.ContentType("text/plain")
-   ctx.ResponseWriter.Header().Add("Server-Status", "OK")
+   //ctx.ResponseWriter.Header().Add("Server-Status", "OK")
    ctx.ResponseWriter.Write([]byte("OK\n"))
 }
 
